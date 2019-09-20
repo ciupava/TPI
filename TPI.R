@@ -28,34 +28,35 @@ areal_fun <- function(f, g, lower_lim, upper_lim) {
 
 # 1. Calculations ----
 
-## Defining the vector in input of the for loop, namely a vector of strings that are the names of the  Metropolitan areas for the analysis (in our case they are 49 towns, one could run this for a single town of course)
-towns_list <- as.character(metros_codes_list$MetroName) # Change according by need
+## Defining the vector in input of the For loop, namely a vector of strings that are the names of the  Metropolitan areas for the analysis (in our case they are 49 towns, one could run this for a single town of course)
+towns_list <- as.character(metros_codes_list$MetroName) # Change according to need
 
-## Creating index for the matrix of the TPI results as output of the for loop, each row will be filled up within the For loop and the index gives the row number. Each row of the matrix is one metro area.
+## Creating indexing variable for the For loop
 index <- 0
-## Creating the matrix for the results of the For loop
+## Creating the matrix for the results output of the For loop
 metro_areas_matrix <- matrix(NA,
                              nrow = length(towns_list), 
-                             ncol = 3) # (three columns in our case, they will be: distance, area, TPI)
+                             ncol = 3) # (the output is defined with three columns, they will be: distance, area, TPI)
+## Creating index for the matrix of the TPI results as output of the For loop, each row will be filled up within the For loop and the index gives the row number. Each row of the matrix is one metro area:
 row_index <- 0
+## In the following For loop each metro areas will be considered singularly and the TPI calculation performed
 for(m in towns_list){
-   print(m)
+   print(m) # Checking the status of the calculations, good when dealing with many metro areas
    index = index +1
    row_index <- row_index + 1
-   #print(row_index)
-   metro <- subset(group_data_metros, MetroName == m)
-   metro_removeNA <-metro[complete.cases(metro[ , "PTacc"]),] # necessary for next step
-   metro_orderacc <- metro_removeNA[order(metro_removeNA$PTacc), ]
+   metro <- subset(group_data_metros, MetroName == m) # Creating the dataframe with data of the single metro area by subsetting the bigger dataframe containing all the mtros on the column "MetroName". Each row is a Block Group.
+   metro_removeNA <-metro[complete.cases(metro[ , "PTacc"]),] # Removing NA cells in order for the following command to work properly
+   metro_orderacc <- metro_removeNA[order(metro_removeNA$PTacc), ] # Ordering the dataframe by growing PT accessibility
    
-   TT <- sum(metro_orderacc$CarlessPOP, #PoorPOP, # #**** CHOOSE HERE!!!!
+   TT <- sum(metro_orderacc$CarlessPOP, # Creating the target variable (TT) summing on the column that contaings the amount of target population of interest ## IMPORTANT! Choose here the population!
              na.rm = TRUE)
-   P <- sum(metro_orderacc$POP,
+   P <- sum(metro_orderacc$POP, # Creating the total population variable (P) by summing the column with population amounts
             na.rm = TRUE)
-   Tperc <- round(TT / P,
+   Tperc <- round(TT / P, # Obtaining the share of the target population as a percentage over the total population
                   3)
    
-   metro_cumsums <- metro_orderacc %>%
-      mutate(cum_nocar = cumsum(replace_na(CarlessPOP, 0)), #PoorPOP, 0)),  #**** CHOOSE HERE!!!!
+   metro_cumsums <- metro_orderacc %>% # Creating dataframe with cumulative sums and 
+      mutate(cum_nocar = cumsum(replace_na(CarlessPOP, 0)), ## IMPORTANT: choose the same column as at line 51
              cum_pop = cumsum(replace_na(POP, 0)) ,
              cum_nocar_norm = round(cum_nocar / P, 2),
              cum_pop_norm = round(cum_pop / P, 2)
