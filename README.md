@@ -22,6 +22,7 @@ In the paper we discuss also an application of the index to transport, using 49 
 transport: adults without a car and adults living in poverty.
 <br>It is found that the car-less population is comparatively better served by public transport than the poor population. Additionally, regions with a higher TPI score for car-less populations also tend to have public transport systems that better serve their population living in poverty. These results highlight that the proposed index allows for easy comparison across regions, despite large differences in the scale of the variable of interest (accessibility by public transport), the total population, and the size of the target groups
 (car-less or adults in poverty.
+
 <a name="paper_footnote">1</a>: Still under review.
 J.P. Pritchard, A. Zanchetta, K. Martens, _A new index to assess the situation of subgroups, with an application to public transport disadvantage in US metropolitan areas_, 202?
 
