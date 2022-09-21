@@ -1,5 +1,5 @@
 project:
-  type: website
+  type: book
   output-dir: docs
 
 book:
@@ -9,9 +9,7 @@ book:
   downloads: [pdf]
   chapters:
     - index.qmd
-    - part: "Run TPI"
-      chapters:
-      - data.qmd
+    - data.qmd
    
 format:
   html:
