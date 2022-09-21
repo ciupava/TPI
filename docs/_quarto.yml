@@ -2,12 +2,15 @@ project:
   type: book
 
 book:
-  title: "TPI - Target Population Index"
+  title: "TPI Target Population Index"
   search: true
   repo-url: https://github.com/ciupava/TPI/tree/master/docs
   downloads: [pdf]
   chapters:
     - index.qmd
+    - part: "Run TPI"
+      chapters:
+      - data.qmd
    
 format:
   html:
