@@ -4,7 +4,7 @@ project:
 book:
   title: "TPI - Target Population Index"
   search: true
-  repo-url: https://github.com/ciupava/TPI/tree/main/docs
+  repo-url: https://github.com/ciupava/TPI/tree/master/doc
   downloads: [pdf]
   chapters:
     - index.qmd
