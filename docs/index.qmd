@@ -4,7 +4,7 @@ author: "Anna Zanchetta"
 date: "21/09/2022"
 ---
 
-Intro
+## Intro
 
 
 **TPI** stands for **Target Population Index**. It is a tool developed to be used in several scientific disciplines to evaluate how particular segments (subgroups) of a population fare compared with the rest of the population. We refer to the subgroup of interest as the _target population_, that is the target of future policies for instance, hence the index's name.
@@ -18,24 +18,24 @@ In the paper we discuss also an application of the index to transport studies, u
 <br> The analysis finds that the car-less population is comparatively better served by public transport than the poor population. Additionally, regions with a higher TPI score for car-less populations also tend to have public transport systems that better serve their population living in poverty. These results highlight that the proposed index allows for easy comparison across regions, despite large differences in the scale of the variable of interest (accessibility by public transport), the total population, and the size of the target groups (car-less or adults in poverty).
 
 
-Notes on the code
+## Notes on the code
 - *DatabaseCreation_groups.R*
 Tool to generate the database necessary to run the analysis. It combines US census data ad different scales (blocks to tracts) for ~50 metropolitan areas. Note: the data is locally stored and this file doesn't access them online, but sources are listed in this repository (see below).
 - *TPI.R*
 Script to run the TPI analysis as in the analysis presented in the paper. Generates also complementary plots optionally.
 
 
-Data
+## Data
 All the data used in the analysis is open-source etc etc
 A detailed description is [here](data.qmd)
 **TBC**
 
 
-Run a TPI analysis yourself
+## Run a TPI analysis yourself
 **TBC**
 
 
-References
+## References
 <a name="paper_footnote">1</a>: Still under review.
 J.P. Pritchard, A. Zanchetta, K. Martens, _A new index to assess the situation of subgroups, with an application to public transport disadvantage in US metropolitan areas_, 202?
 
