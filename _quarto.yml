@@ -10,7 +10,8 @@ book:
   chapters:
     - index.qmd
     - jobacc.qmd
-      - chapters:
+    - part: "Running TPI"
+      chapters:
         - data.qmd
         - data_prep.qmd
         - workflow.qmd

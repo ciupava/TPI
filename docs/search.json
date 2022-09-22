@@ -11,7 +11,7 @@
     "href": "index.html#notes-on-the-code",
     "title": "TPI Target Population Index",
     "section": "0.2 Notes on the code",
-    "text": "0.2 Notes on the code\n\nDatabaseCreation_groups.R Tool to generate the database necessary to run the analysis. It combines US census data ad different scales (blocks to tracts) for ~50 metropolitan areas. Note: the data is locally stored and this file doesn’t access them online, but sources are listed in this repository (see below).\nTPI.R Script to run the TPI analysis as in the analysis presented in the paper. Generates also complementary plots optionally."
+    "text": "0.2 Notes on the code\n\nDatabaseCreation_groups.R Tool to generate the database necessary to run the analysis. It combines US census data ad different scales (blocks to tracts) for ~50 metropolitan areas. Note: the data is locally stored and this file doesn’t access them online, but sources are listed in this repository (see below). The R code is here and its use is described more in detail here\nTPI.R Script to run the TPI analysis as in the analysis presented in the paper. It generates also complementary plots optionally. The R code is here and its use is explained here"
   },
   {
     "objectID": "index.html#data",
@@ -25,7 +25,7 @@
     "href": "index.html#run-a-tpi-analysis-yourself",
     "title": "TPI Target Population Index",
     "section": "0.4 Run a TPI analysis yourself",
-    "text": "0.4 Run a TPI analysis yourself\nTBC"
+    "text": "0.4 Run a TPI analysis yourself\nTBC Application to transport studies, with code walkthrough here"
   },
   {
     "objectID": "index.html#references",
@@ -35,10 +35,17 @@
     "text": "0.5 References\n1: Still under review. J.P. Pritchard, A. Zanchetta, K. Martens, A new index to assess the situation of subgroups, with an application to public transport disadvantage in US metropolitan areas, 202?\nYou can also download this site as a PDF and find all code on Github.\nThis work was implemented at the Technion - Israel Institute of Technology under the guidance of prof. Karel Martens within the Fair Transport Lab"
   },
   {
+    "objectID": "jobacc.html",
+    "href": "jobacc.html",
+    "title": "2  TPI applied to Transport Justice analysis",
+    "section": "",
+    "text": "TPI was applied in a case study to analyse job accessibility by transport in 49 US metropolitan areas"
+  },
+  {
     "objectID": "data.html",
     "href": "data.html",
-    "title": "2  Data sources",
+    "title": "3  Data sources",
     "section": "",
-    "text": "Sources\nDescription\nExamples"
+    "text": "Sources\nDescription\nExamples (tables)\n\n\nlibrary(ggplot2)\n\nggplot(airquality, aes(Temp, Ozone)) + \n  geom_point() + \n  geom_smooth(method = \"loess\"\n)\n\n\n\n\nFigure 3.1: Temperature and ozone level."
   }
 ]

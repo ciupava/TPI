@@ -7,22 +7,18 @@ TBC
 
 - [ ] Sources
 - [ ] Description
-- [ ] Examples
+- [ ] Examples (tables)
 
-```{python}
-#| label: fig-polar
-#| fig-cap: "A line plot on a polar axis"
+```{r}
+#| output-location: column
+#| label: fig-airquality
+#| fig-cap: Temperature and ozone level.
+#| warning: false
 
-import numpy as np
-import matplotlib.pyplot as plt
+library(ggplot2)
 
-r = np.arange(0, 2, 0.01)
-theta = 2 * np.pi * r
-fig, ax = plt.subplots(
-  subplot_kw = {'projection': 'polar'} 
+ggplot(airquality, aes(Temp, Ozone)) + 
+  geom_point() + 
+  geom_smooth(method = "loess"
 )
-ax.plot(theta, r)
-ax.set_rticks([0.5, 1, 1.5, 2])
-ax.grid(True)
-plt.show()
 ```
