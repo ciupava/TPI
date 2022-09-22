@@ -9,7 +9,11 @@ book:
   downloads: [pdf]
   chapters:
     - index.qmd
-    - data.qmd
+    - jobacc.qmd
+      - chapters:
+        - data.qmd
+        - data_prep.qmd
+        - workflow.qmd
    
 format:
   html:
