@@ -1,0 +1,17 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "TPI Target Population Index"
+  search: true
+  repo-url: https://github.com/ciupava/TPI/tree/master/docs
+  downloads: [pdf]
+  chapters:
+    - index.qmd
+    - data.qmd
+   
+format:
+  html:
+    theme: cosmo
+  pdf: default
