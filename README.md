@@ -1,6 +1,15 @@
 # TPI code
 
 In this repo you find the material we have generated to implement a TPI analysis.
+Please do not hesitate to open an issue or contact us in case you think anything could be improved.
+
+---
+
+**Run it yourself!**
+The materiale present in page is available with a more detailed description of the data sources, how to perform the data preparation and the process behind a TPI analysis at [this](https://ciupava.github.io/TPI/) GitHub book.
+
+---
+
 
 ## Intro
 
@@ -16,24 +25,33 @@ In the paper we discuss also an application of the index to transport studies, u
 
 
 ## Notes on the code
-- *DatabaseCreation_groups.R*
+- (DatabaseCreation_groups.)[https://github.com/ciupava/TPI/blob/master/DatabaseCreation_Groups.R]
 Tool to generate the database necessary to run the analysis. It combines US census data ad different scales (blocks to tracts) for ~50 metropolitan areas. Note: the data is locally stored and this file doesn't access them online, but sources are listed in this repository (see below).
-- *TPI.R*
+- (TPI.R)[https://github.com/ciupava/TPI/blob/master/TPI.R]
 Script to run the TPI analysis as in the analysis presented in the paper. Generates also complementary plots optionally.
 
+
 ## Data
-All the data used in the analysis is open-source (...) **TBC**
+All the data used in the analysis is open-source (...)
 
-- [ ] link to data sources (check availability and compatibility with code... outdated?)
-- [ ] explanation of used variables (why, meaning, ...)
+**TBC**
 
-## Run a TPI analysis yourself
-- [ ] add workflow and what one should do to reproduce the same work
-- [ ] put example of pieces of table and how the data should look like for the code to run
 
 
 ## References
+
+This work was implemented at the Technion - Israel Institute of Technology under the guidance of prof. Karel Martens within the [Fair Transport Lab](https://karelm.net.technion.ac.il/)
+
 <a name="paper_footnote">1</a>: Still under review.
 J.P. Pritchard, A. Zanchetta, K. Martens, _A new index to assess the situation of subgroups, with an application to public transport disadvantage in US metropolitan areas_, 202?
 
 <a name="data_footnote">2</a>: (Link?) and description of data sources
+
+## TO_DO list:
+
+- [ ] complete the Data section: link to data sources (check availability and compatibility with code... outdated?)
+- [ ] explanation of used fields in the tables (why, meaning of the fields, ...)
+- [ ] add workflow and what one should do to reproduce the same work (see [Issue #1](https://github.com/ciupava/TPI/issues/1))
+- [ ] put example of pieces of table and how the data should look like for the code to run
+- [ ] eliminate hardcoded variables
+- [ ] check affiliation is correct
