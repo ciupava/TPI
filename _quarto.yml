@@ -9,6 +9,7 @@ book:
   downloads: [pdf]
   chapters:
     - index.qmd
+    - intro.qmd
     - jobacc.qmd
     - part: "Running TPI"
       chapters:

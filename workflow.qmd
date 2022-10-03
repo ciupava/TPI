@@ -1,0 +1,41 @@
+---
+title: "Run TPI yourself: code walkthrough"
+toc: true
+---
+
+
+## 1st part of the code
+
+Bla bla
+
+examples
+
+function explanation
+
+## 2nd part of the code
+
+some beautiful plots
+
+```{python}
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+Source of the code: [link](https://jthomasmock.github.io/quarto-in-two-hours/materials/01-intro-quarto.html#/code-more-than-just-r)
+
+## n-th part of the code
+
+I like TPI so much!
