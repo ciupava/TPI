@@ -1,5 +1,7 @@
 # TPI code
 
+[![DOI](https://zenodo.org/badge/207566992.svg)](https://zenodo.org/badge/latestdoi/207566992)
+
 In this repo you find the material we have generated to implement a TPI analysis.
 Please do not hesitate to open an issue or contact us in case you think anything could be improved.
 
