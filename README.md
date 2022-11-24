@@ -6,7 +6,7 @@ Please do not hesitate to open an issue or contact us in case you think anything
 ---
 
 **Run it yourself!**
-The materiale present in page is available with a more detailed description of the data sources, how to perform the data preparation and the process behind a TPI analysis at [this](https://ciupava.github.io/TPI/) GitHub book.
+The material present in page is available with a more detailed description of the data sources, how to perform the data preparation and the process behind a TPI analysis at [this](https://ciupava.github.io/TPI/) GitHub book.
 
 ---
 
@@ -42,16 +42,18 @@ All the data used in the analysis is open-source (...)
 
 This work was implemented at the Technion - Israel Institute of Technology under the guidance of prof. Karel Martens within the [Fair Transport Lab](https://karelm.net.technion.ac.il/)
 
-<a name="paper_footnote">1</a>: Still under review.
-J.P. Pritchard, A. Zanchetta, K. Martens, _A new index to assess the situation of subgroups, with an application to public transport disadvantage in US metropolitan areas_, 202?
+<a name="paper_footnote">1</a>: John P. Pritchard, Anna Zanchetta, Karel Martens, _A new index to assess the situation of subgroups, with an application to public transport disadvantage in US metropolitan areas_, Transportation Research Part A: Policy and Practice, 2022, 166.86-100<br/>
+[https://www.sciencedirect.com/science/article/pii/S0965856422002609](https://www.sciencedirect.com/science/article/pii/S0965856422002609)
 
 <a name="data_footnote">2</a>: (Link?) and description of data sources
 
 ## TO_DO list:
 
 - [ ] complete the Data section: link to data sources (check availability and compatibility with code... outdated?)
-- [ ] explanation of used fields in the tables (why, meaning of the fields, ...)
-- [ ] add workflow and what one should do to reproduce the same work (see [Issue #1](https://github.com/ciupava/TPI/issues/1))
-- [ ] put example of pieces of table and how the data should look like for the code to run
-- [ ] eliminate hardcoded variables
-- [ ] check affiliation is correct
+- [ ] review the code:
+
+    - [ ] explanation of used fields in the tables (why, meaning of the fields, ...)
+    - [ ] add workflow and what one should do to reproduce the same work (see [Issue #1](https://github.com/ciupava/TPI/issues/1))
+    - [ ] put example of pieces of table and how the data should look like for the code to run
+    - [ ] eliminate hardcoded variables
+    - [ ] check affiliation is correct
