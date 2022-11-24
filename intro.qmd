@@ -34,7 +34,8 @@ A detailed description is [here](data.qmd)
 Application to transport studies, with code walkthrough [here](jobacc.qmd)
 
 ## References
-<a name="paper_footnote">1</a>: Still under review.
-J.P. Pritchard, A. Zanchetta, K. Martens, _A new index to assess the situation of subgroups, with an application to public transport disadvantage in US metropolitan areas_, 202?
+<a name="paper_footnote">1</a>: John P. Pritchard, Anna Zanchetta, Karel Martens, _A new index to assess the situation of subgroups, with an application to public transport disadvantage in US metropolitan areas_, Transportation Research Part A: Policy and Practice, 2022, 166.86-100<br/>
+[https://www.sciencedirect.com/science/article/pii/S0965856422002609](https://www.sciencedirect.com/science/article/pii/S0965856422002609)
+
 
 You can also download this site as [a PDF](https://ciupava.github.io/TPI/TPI.pdf) and find all code [on Github](https://github.com/ciupava/TPI).
